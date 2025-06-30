@@ -10,6 +10,13 @@ public class CrmBackendApplication {
 		SpringApplication.run(CrmBackendApplication.class, args);
 	}
 
+
 }
 
 // the spring application main point !
+
+class A{
+	public void run(){
+		System.out.println("Running");
+	}
+}
