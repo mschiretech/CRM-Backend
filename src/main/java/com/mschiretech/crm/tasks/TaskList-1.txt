@@ -1,0 +1,117 @@
+First Task List:-
+
+1.  Create a Class in java or kotlin, inside the class create a function for
+    terminal gui and more functions for internal guis(sub-options) !
+    in the function include all the input and output handling !
+    then use switch statement for calling the specific functions !
+    For using the methods inherit the class in other classes !
+        eg : ===============================
+                   CRM Software Menu
+             ===============================
+
+             1. View Customers
+             2. Add New Customer
+             3. Search Customer by Name
+             4. Edit Customer
+             5. Delete Customer
+             6. List All Customers
+             7. Export to CSV
+             8. Import from CSV
+             9. Help
+             10. Exit
+
+             Please enter your choice (1-10):
+
+        Note : Use separate Main methods ! other than the CrmBackendApplication Class file !
+               Do not modify the main method inside it ! Create multiple other main methods !
+               Create a separate folder/directory under : com.mschiretech.crm ->
+
+2.  Under com.mschiretech.crm -> Create a new package name core, inside it Create another package named features
+    inside it create a class inside it create all the methods like view all customers, add new customer etc..
+    then inherit the class by the class containing the method for terminal gui !
+        Features :
+            -> View All Customers
+            -> Add new customer
+            -> get customer by name
+            -> edit customer
+            -> delete customer
+            -> message customer
+            -> show all the messages of a customer
+            -> export to csv file
+            -> import from csv file
+            -> help
+            -> system stats and analysis
+            -> Api counts and health
+            -> Create new project with customer
+            -> Edit project
+            -> Analysis of project
+            -> delete project
+            -> List all projects
+            -> exit
+            etc....
+
+3.  under core create a new package named "tempdb" then define all the required
+    database structure and columns you need !along with their datatypes !
+    for creating a database use jdbc or create a class containing the data members as the columns !
+    and create another class and create multiple objects of the structure/data class
+    then access the data through the objects using .(dot) operator !
+    create functions for injecting some demo/dummy data to the objects ! for testing purposes !
+    and write methods for all the database functionality like Create, Get, Update, Delete, etc...
+    databases structures to be created :
+        -> Customer DB
+        -> Messages DB
+        -> Projects DB
+        -> Logs DB
+        -> Stats DB
+        -> APIs DB
+
+    Note : You can use file handling too instead of object creation !
+
+4.  under the core create a package networking ! under that create a class file
+    containing methods for sending and receiving data using http/https protocol !
+    create Several get and post methods for sending user data to the server !
+    create functions like :
+        -> send all users to server
+        -> get all users from server
+        -> get server stats
+        -> post update user !
+        etc..
+
+5.  under the core -> networking package create a package named jsonEn
+    under it create a class file containing several methods for formatting
+    raw data to json format for ease in sending it to the server !
+    and decoding json data to raw data !
+    Create several methods like :
+        -> user format
+        -> update user format
+        -> get users format
+        etc...
+    demo json structure :
+        {
+          "users": [
+            {
+              "user_id": 1,
+              "first_name": "John",
+              "last_name": "Doe",
+              "email": "john.doe@example.com",
+              "phone": "+1-123-456-7890",
+              "address": "123 Main St, New York, NY",
+              "company": "Acme Corp",
+              "position": "Sales Manager",
+              "created_at": "2025-07-05T12:30:00Z",
+              "notes": "Interested in annual subscription."
+            },
+            {
+              "user_id": 2,
+              "first_name": "Jane",
+              "last_name": "Smith",
+              "email": "jane.smith@example.com",
+              "phone": "+1-987-654-3210",
+              "address": "456 Oak Rd, Los Angeles, CA",
+              "company": "Beta Ltd.",
+              "position": "Marketing Lead",
+              "created_at": "2025-07-01T09:00:00Z",
+              "notes": "Requested a demo last week."
+            }
+          ]
+        }
