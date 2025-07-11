@@ -5,6 +5,7 @@ import org.json.JSONObject;
 
 import java.util.*;
 
+
 public class Task5 {
     static Scanner scanner = new Scanner(System.in);
     static List<Map<String, Object>> users = new ArrayList<>();
